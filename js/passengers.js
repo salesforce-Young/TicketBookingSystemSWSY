@@ -2,9 +2,9 @@
 // Top Form / radio round trip
 function tripType ( ) {
 let oneway  =  document.getElementById("oneway").value;
-let roundtrip =  document.getElementById (“roundtrip “).value;
+let roundtrip =  document.getElementById ("roundtrip ").value;
     if (oneway == false && roundtrip == false){
-      alert (" Please select your flight type“);
+      alert (" Please select your flight type");
             return false;
    } 
             return true ;
@@ -12,18 +12,18 @@ let roundtrip =  document.getElementById (“roundtrip “).value;
   // Top Form/ From To
   
 function toAndFrom ( ) {
-    let   From = document.getElementById (" origin“ ).value;
-    let   To = document.getElementById (“ destination “).value;
-        If ( From == “null” || From == " " ) {
-            alert ( “ Please enter your departure”);
+    let   From = document.getElementById (" origin" ).value;
+    let   To = document.getElementById (" destination ").value;
+        if ( From == null || From == " " ) {
+            alert ( " Please enter your departure");
             return false ;
     }
-        If ( To == “null” || From == " " ) {
-            alert ( “ Please enter your destination”);
+        if ( To == null || From == " " ) {
+            alert ( " Please enter your destination" );
             return false ;
     }
-        If ( From == To ) {
-            alert ( “ origin should not be the same as destination”);
+        if ( From == To ) {
+            alert ( " origin should not be the same as destination ");
             return false ;
 }) 
  // Top Form/  Number of adult & children / System validation
@@ -31,8 +31,8 @@ function toAndFrom ( ) {
 
 function travelClass ( ) {
     let class1 =document.getElementById ("travel-class").value;
-    if (class1 ==” select class”) {
-            alert ( “Please select class”) ;
+    if (class1 ==" select class ") {
+            alert ( " Please select class") ;
             return false ;	
     }
             return true;
@@ -40,9 +40,9 @@ function travelClass ( ) {
 // Passenger / radio gender
 function genderValidate ( ) {
     let male = document.getElementById("genderp-male").value;
-    let female = document.getElementById ("genderp-female “).value;
+    let female = document.getElementById ("genderp-female ").value;
         if (male == false && female == false){
-            alert (" Please select your gender“);
+            alert (" Please select your gender");
             return false;
        } 
             return true;
@@ -74,8 +74,8 @@ function phoneValidate (){
 // Passenger / Payment option 
 function  paymentValidate ( ) {
     let payment =document.getElementById ("payment-method").value;
-    if (payment == ” select payment") {
-            alert ( “Please select payment option) ;
+    if (payment == " select payment") {
+            alert ( "Please select payment option") ;
             return false ;	
     }
             return true;
